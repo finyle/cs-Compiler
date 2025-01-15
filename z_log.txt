@@ -4,9 +4,9 @@
 0. wsl + cpp14, makefile 编译，复制到 wsl 中执行 make
 1. 实现基于cool 语言的编译器： 词法分析， 解析器， 语义分析， 代码生成4部分
 1. cool 语言编译工具coolc 仅支持 i686 架构； 编译为在mips机器可识别的字节码并执行, apt install spim
-2. apt install flex (assign2) lexer
-3. apt install  bison (assign3) parser
-4. semant (语义分析： 语法规则检测)
+2. apt install flex (正则匹配分词 cool.flex) lexer
+3. apt install  bison (语法树构建 表达式解析 cool.y) parser
+4. semant (语法树遍历 语义分析：语法规则检测)
 5. cgen (生成机器码):
 ```
 **********************************************************
@@ -26,5 +26,5 @@
 **********************************************************
 
 spim -h
-spim在线模拟器：https://codeforces.com/
+spim在线模拟器：https://shawnzhong.github.io/JsSpim/
 
